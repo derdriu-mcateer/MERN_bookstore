@@ -16,10 +16,14 @@ const closeConnection = () => {
     mongoose.disconnect()
 }
 
-const bookListSchema = new mongoose.Schema({
-    name: {type: String, required: true},
-})
+const bookSchema = new mongoose.Schema({
+    title: {type: String, required: true},
+    author: {type: String, required: true},
+    genre: {type: String},
+    description: {type: String},
+    read: {type: Boolean, required: true, default: false},
+  });
+  
+  const BookModel = mongoose.model('Book', bookSchema);
 
-const BookListModel = mongoose.model('BookList', bookListSchema)
-
-export {closeConnection, BookListModel}
+export {closeConnection, BookModel}
