@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../CSS/BookShelf.css'
 
 export const BookShelf = () => {
   const [books, setBooks] = useState([]);
@@ -11,9 +12,14 @@ export const BookShelf = () => {
 
   return (
     <div>
-      <div>
+      <div class="book-shelf">
         {books.map((book) => (
-          <p key={book.id}>{book.title}</p>
+          <div key={book.id} class="book-card">
+            <h2 id="title"> {book.title}</h2>
+            <p id="author">By: {book.author}</p>
+            <p id="genre">Genre: {book.genre}</p>
+            <p id="description">Description: {book.description}</p>
+          </div>
         ))}
       </div>
     </div>

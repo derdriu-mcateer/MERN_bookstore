@@ -1,0 +1,16 @@
+.book-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25%;
+    margin: 20px;
+    max-width: 300px;
+    background-color: #FFA5C6;
+}
+
+.book-shelf{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
