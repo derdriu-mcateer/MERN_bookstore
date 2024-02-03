@@ -1,0 +1,29 @@
+/* NewBook.css */
+
+.create {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    background-color:#BEAEE2;
+    padding: 20px;
+}
+
+.create label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create input {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #5CAEDD;
+}
+
+.create button {
+    width: 100%;
+}
+
+.error {
+    margin-top: 10px;
+    color: red;
+}

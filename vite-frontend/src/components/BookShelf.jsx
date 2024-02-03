@@ -12,13 +12,13 @@ export const BookShelf = () => {
 
   return (
     <div>
-      <div class="book-shelf">
+      <div key="bookshelf" className="book-shelf">
         {books.map((book) => (
-          <div key={book.id} class="book-card">
-            <h2 id="title"> {book.title}</h2>
-            <p id="author">By: {book.author}</p>
-            <p id="genre">Genre: {book.genre}</p>
-            <p id="description">Description: {book.description}</p>
+          <div key={book.id} className="book-card">
+            <h2 key={book.title} id="title"> {book.title}</h2>
+            <p key={book.author} id="author">By: {book.author}</p>
+            <p key={book.genre} id="genre">Genre: {book.genre}</p>
+            <p key={book.description} id="description">Description: {book.description}</p>
           </div>
         ))}
       </div>
